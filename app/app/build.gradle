@@ -30,6 +30,7 @@ dependencies {
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.4.0'
     implementation 'com.github.Binary-Finery:Bungee:master-SNAPSHOT'
     implementation 'com.fujiyuu75:sequent:0.2.1'
+    compile 'com.codemybrainsout.onboarding:onboarder:1.0.4'
 
 
 }
