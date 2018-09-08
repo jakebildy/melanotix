@@ -21,6 +21,7 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data android:name="com.google.ar.core" android:value="required" />
     </application>
 
 </manifest>
