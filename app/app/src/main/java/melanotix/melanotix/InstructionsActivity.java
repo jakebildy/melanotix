@@ -56,7 +56,7 @@ public class InstructionsActivity extends AhoyOnboarderActivity {
 
     @Override
     public void onFinishButtonPressed() {
-        Intent i = new Intent(InstructionsActivity.this, MenuActivity.class);
+        Intent i = new Intent(InstructionsActivity.this, WebCameraView.class);
         startActivity(i);
 
     }
