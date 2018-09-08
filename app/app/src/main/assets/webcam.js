@@ -1,4 +1,4 @@
-var video = document.querySelector("#videoElement");
+var video = document.querySelector("#webcam");
 
 if (navigator.mediaDevices.getUserMedia) {
     navigator.mediaDevices.getUserMedia({video: true})
@@ -6,3 +6,4 @@ if (navigator.mediaDevices.getUserMedia) {
             video.srcObject = stream;
         })
 }
+
