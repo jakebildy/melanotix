@@ -9,15 +9,11 @@ document.getElementById("capture").onclick = function() {
                 .drawImage(video, 0, 0, canvas.width, canvas.height);
 
         var img = document.createElement("img");
+
         img.src = canvas.toDataURL();
 
         document.getElementById("output").prepend(img);
-
-        img.url = "pictureTaken.png";
-
-        alert(img.url);
-
-       document.getElementById("webcam").hidden = true;
+        document.getElementById("webcam").hidden = true;
 
         // Sending and receiving data in JSON format using POST method
 
