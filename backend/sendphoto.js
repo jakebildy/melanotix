@@ -1,17 +1,23 @@
 document.getElementById("capture").onclick = function() {
-        //document.getElementById("webcam").hidden = true;
 
         const canvas = document.createElement('canvas'); // create a canvas
 
         canvas.width = document.getElementById("webcam").videoWidth; // set its size to the one of the video
         canvas.height = document.getElementById("webcam").videoHeight;
-        canvas.getContext('2d')
-            .drawImage(video, 0, 0, canvas.width, canvas.height);
 
-        var img = document.createElement("photoCapture");
+        canvas.getContext('2d')
+                .drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        var img = document.createElement("img");
         img.src = canvas.toDataURL();
+
         document.getElementById("output").prepend(img);
-        alert("yeeet");
+
+        img.src = "../pictureTaken.png";
+
+        alert(img.src);
+
+       document.getElementById("webcam").hidden = true;
 
         // Sending and receiving data in JSON format using POST method
 
