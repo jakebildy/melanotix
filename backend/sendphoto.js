@@ -30,10 +30,11 @@ document.getElementById("capture").onclick = function() {
  
        
         xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
+            if (xhr.readyState === 4 && xhr.status === 200) {
 
-                console.log(xhr.responseText);
-                proccess(JSON.parse(xhr.responseText));
+                //console.log(xhr.responseText);
+                console.log(JSON.parse(xhr.responseText));
+                process(JSON.parse(xhr.responseText));
 
             }
             else
@@ -46,8 +47,6 @@ document.getElementById("capture").onclick = function() {
         //var data = JSON.stringify({"Url": "https://melanotix.me/capture.png"});
         var body = dataURItoBlob(img.src);
         xhr.send(body);
-
-        
 
 };
 function dataURItoBlob(dataURI) {
@@ -71,7 +70,35 @@ function dataURItoBlob(dataURI) {
 }
 
 function process(parsedData){
-
     //todo: process
+    var labels= parsedData["predictions"];
+    console.log(labels.length);
+    var a;
+    var b;
+    var c;
+    var d;
+    for(var x=0; x<labels.length ;x++){
+    currentLabel=labels[x]
+     console.log(currentLabel);
+     console.log();
+       if(currentLabel["tagName"]=="Asymmetry"){
+        a=currentLabel["probability"];
+       }
+        if(currentLabel["tagName"]=="Rought edges"){
+        b=currentLabel["probability"];
+
+       }
+       if(currentLabel["tagName"]=="Color"){
+        c=currentLabel["probability"];
+
+       }
+       if(currentLabel["tagName"]=="Textured Surface"){
+        d=currentLabel["probability"];
+       }
+
+    }
+    var preds = [a,b,c,d];
+   localStorage.setItem("preds",preds);
+
 }
 
