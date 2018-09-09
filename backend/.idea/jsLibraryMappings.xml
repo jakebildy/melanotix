@@ -3,6 +3,7 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/index.html" libraries="{jquery}" />
     <file url="file://$PROJECT_DIR$/main_activity.html" libraries="{jquery}" />
+    <file url="file://$PROJECT_DIR$/response.js" libraries="{jquery}" />
     <file url="file://$PROJECT_DIR$/sendphoto.js" libraries="{jquery}" />
     <file url="file://$PROJECT_DIR$/smoothtrans.js" libraries="{jquery}" />
     <file url="file://$PROJECT_DIR$/webcam.js" libraries="{jquery}" />
