@@ -1,10 +1,4 @@
-var timeleft = 3;
-var downloadTimer = setInterval(function(){
-    document.getElementById("timer").innerText = (3 - --timeleft).toString();
-    if(timeleft <= 0)
-        clearInterval(downloadTimer);
-
-    if (timeleft === 0) {
+document.getElementById("capture").onclick = function() {
         //document.getElementById("webcam").hidden = true;
 
         const canvas = document.createElement('canvas'); // create a canvas
@@ -17,7 +11,7 @@ var downloadTimer = setInterval(function(){
         var img = document.createElement("photoCapture");
         img.src = canvas.toDataURL();
         document.getElementById("output").prepend(img);
-
+        alert("yeeet");
 
         // Sending and receiving data in JSON format using POST method
 
@@ -48,7 +42,6 @@ var downloadTimer = setInterval(function(){
         var data = JSON.stringify('{"Url": "https://www.medicalnewstoday.com/content/images/hero/079/79115/79115_256.jpg"}');
 
         xhr.send(data);
-    }
 
-},1000);
+};
 
