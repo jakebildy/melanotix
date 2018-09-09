@@ -39,3 +39,8 @@ text {
     left: 0;
     z-index: 1;
 }
+
+.boxed {
+    border: 1px solid green ;
+    background-color: rgba(255, 255, 255, 0.3) ;
+}
