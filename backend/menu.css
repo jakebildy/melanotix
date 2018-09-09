@@ -1,10 +1,16 @@
 #VIDEO {
     z-index: -2;
     position: fixed;
-    right: -300px;
+    right: -350px;
     top: -100px;
     width: 150%;
     height: 120%;
+
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
 }
 
 text {
@@ -19,9 +25,6 @@ text {
     line-height: 10px;
 }
 
-red {
-    color: #950000;
-}
 
 biggy {
     font-size: 26px;
@@ -40,16 +43,24 @@ biggy {
 
 #logoWhite {
     position: fixed;
-    top: 100px;
+    top: 90px;
     left: 50%;
     z-index: 1;
     transform: translate(-50%);
 }
 
+#b1 {
+    top: 340px;
+}
+
+#b2 {
+    top: 440px;
+}
+
+
 .myButton {
     background-color:transparent;
     -moz-border-radius:35px;
-    top: 300px;
     left: 50%;
     -webkit-border-radius:35px;
     border-radius:35px;
@@ -60,7 +71,7 @@ biggy {
     font-family:Arial;
     font-size:28px;
     vertical-align: top;
-    position: relative;
+    position: fixed;
     padding:18px 31px;
     text-decoration:none;
     transform: translate(-50%);
@@ -90,4 +101,7 @@ biggy {
     left: 50%;
     transform: translate(-50%);
 }
+
+
+
 
