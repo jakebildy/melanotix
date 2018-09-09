@@ -11,12 +11,12 @@
 }
 
 text {
-    color:red;
+    color:green;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 40px;
     position: relative;
     float: left;
-    top: 10%;
+    top: 30px;
     left: 50%;
     transform: translate(-50%);
 }
