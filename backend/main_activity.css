@@ -67,3 +67,17 @@ biggy {
     transform: translate(-50%);
 }
 
+#capture:hover
+{
+    filter: brightness(150%);
+    transition: all 1s ease;
+    height: 18%;
+    width: 9%;
+
+}
+
+#capture:hover:after
+{
+    transition: all 1s ease;
+
+}
