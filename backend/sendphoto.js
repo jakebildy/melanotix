@@ -79,16 +79,17 @@ function process(parsedData){
     var d;
     for(var x=0; x<labels.length ;x++){
     currentLabel=labels[x]
+
      console.log(currentLabel);
      console.log();
-       if(currentLabel["tagName"]=="Asymmetry"){
+       if(currentLabel["tagName"]=="Asymmetrical"){
         a=currentLabel["probability"];
        }
-        if(currentLabel["tagName"]=="Rought edges"){
+        if(currentLabel["tagName"]=="Rough edges"){
         b=currentLabel["probability"];
 
        }
-       if(currentLabel["tagName"]=="Color"){
+       if(currentLabel["tagName"]=="Gradient"){
         c=currentLabel["probability"];
 
        }
