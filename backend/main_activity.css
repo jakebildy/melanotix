@@ -75,3 +75,23 @@ biggy {
     transition: all 1s ease;
 
 }
+
+#next {
+    position: fixed;
+    top: 263px;
+    padding: 10px 10px 10px 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#next:hover
+{
+    filter: brightness(150%);
+    transition: all 1s ease;
+
+}
+
+#next:hover:after
+{
+    transition: all 1s ease;
+}
