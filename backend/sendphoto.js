@@ -13,9 +13,9 @@ document.getElementById("capture").onclick = function() {
 
         document.getElementById("output").prepend(img);
 
-        img.src = "../pictureTaken.png";
+        img.url = "../pictureTaken.png";
 
-        alert(img.src);
+        alert(img.url);
 
        document.getElementById("webcam").hidden = true;
 
